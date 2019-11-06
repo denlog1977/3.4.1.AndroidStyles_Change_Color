@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='3.4.1.AndroidStyles_Change_Color'

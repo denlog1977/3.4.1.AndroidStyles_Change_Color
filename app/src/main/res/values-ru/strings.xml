@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">3.3.2.AppResources_Language_Switch</string>
+    <string name="buttonOK">Океюшки</string>
+    <string name="textView">Текст на русском языке</string>
+    <string name="buttonBlack">Чёрный</string>
+    <string name="buttonGreen">Зелёный</string>
+    <string name="buttonBlue">Синий</string>
+    <string name="buttonDefault">По дефолту</string>
+
+
+</resources>
