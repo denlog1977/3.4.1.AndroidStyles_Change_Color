@@ -2,8 +2,8 @@ package com.example.a341androidstyles_change_color;
 
 import android.content.Intent;
 
-public class Utils
-{
+public class Utils {
+
     private static int sTheme;
 
     public final static int THEME_DEFAULT = 0;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
-        <item>Русский</item>
         <item>English</item>
+        <item>Русский</item>
     </string-array>
 
     <string-array name="colors">
-        <item>Чёрный</item>
-        <item>Зелёный</item>
-        <item>Синий</item>
+        <item>@string/colorBlack</item>
+        <item>@string/colorGreen</item>
+        <item>@string/colorBlue</item>
     </string-array>
 </resources>

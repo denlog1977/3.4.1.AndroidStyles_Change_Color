@@ -6,6 +6,9 @@
     <string name="buttonGreen">Зелёный</string>
     <string name="buttonBlue">Синий</string>
     <string name="buttonDefault">По дефолту</string>
+    <string name="colorBlack">Чёрный</string>
+    <string name="colorGreen">Зелёный</string>
+    <string name="colorBlue">Синий</string>
 
 
 </resources>

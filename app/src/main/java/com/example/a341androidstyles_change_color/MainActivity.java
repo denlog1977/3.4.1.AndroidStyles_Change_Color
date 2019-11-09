@@ -15,6 +15,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Spinner mLanguageSpinner;
+    private Spinner mColorsSpinner;
 
     /** Called when the activity is first created. */
     @Override
@@ -31,15 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button).setOnClickListener(this);
 
         mLanguageSpinner = findViewById(R.id.languageSpinner);
+        mColorsSpinner = findViewById(R.id.colorsSpinner);
 
     }
 
     @Override
     public void onClick(View v)     {
         // TODO Auto-generated method stub
-        switch (v.getId())
-        {
-
+        switch (v.getId()) {
             case R.id.buttonDefault:
                 Utils.changeToTheme(this, Utils.THEME_DEFAULT);
                 break;
@@ -53,7 +53,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Utils.changeToTheme(this, Utils.THEME_BLUE);
                 break;
             case R.id.button:
-                Toast.makeText(MainActivity.this, mLanguageSpinner.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+
+                switch (mColorsSpinner.getSelectedItem().toString()) {
+                    case "Чёрный":
+                        Utils.changeToTheme(this, Utils.THEME_BLACK);
+                        break;
+                    case "Black":
+                        Utils.changeToTheme(this, Utils.THEME_BLACK);
+                        break;
+                    case "Зелёный":
+                        Utils.changeToTheme(this, Utils.THEME_GREEN);
+                        break;
+                    case "Green":
+                        Utils.changeToTheme(this, Utils.THEME_GREEN);
+                        break;
+                    case "Синий":
+                        Utils.changeToTheme(this, Utils.THEME_BLUE);
+                        break;
+                    case "Blue":
+                        Utils.changeToTheme(this, Utils.THEME_BLUE);
+                        break;
+                    default:
+                        Utils.changeToTheme(this, Utils.THEME_DEFAULT);
+                        break;
+                }
+
+
+                Toast.makeText(MainActivity.this, mLanguageSpinner.getSelectedItem().toString() + " " + mColorsSpinner.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
                 Locale locale;
                 if (mLanguageSpinner.getSelectedItem().toString().equals("English")) {
                     locale = new Locale("en");

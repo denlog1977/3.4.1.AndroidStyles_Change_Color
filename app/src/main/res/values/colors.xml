@@ -4,12 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="colorPrimaryBlack">#818181</color>
+    <color name="colorPrimaryBlack">#1F1F1F</color>
     <color name="colorPrimaryDarkBlack">#080F08</color>
-    <color name="colorAccentBlack">#72090A05</color>
-    <color name="colorTextBlack">#72000000</color>
+    <color name="colorAccentBlack">#7E7E7E</color>
+    <color name="colorTextBlack">#FFFFFF</color>
 
-    <color name="colorPrimaryGreen">#2E8B57</color>
+    <color name="colorPrimaryGreen">#179200</color>
     <color name="colorPrimaryDarkGreen">#006400</color>
     <color name="colorAccentGreen">#6B8E23</color>
     <color name="colorTextGreen">#283600</color>
