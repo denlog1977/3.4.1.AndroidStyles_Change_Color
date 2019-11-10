@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -17,9 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Spinner mLanguageSpinner;
     private Spinner mColorsSpinner;
 
-    /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)     {
+    public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         Utils.onActivityCreateSetTheme(this);
@@ -37,8 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v)     {
-        // TODO Auto-generated method stub
+    public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonDefault:
                 Utils.changeToTheme(this, Utils.THEME_DEFAULT);
@@ -56,20 +53,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 switch (mColorsSpinner.getSelectedItem().toString()) {
                     case "Чёрный":
-                        Utils.changeToTheme(this, Utils.THEME_BLACK);
-                        break;
                     case "Black":
                         Utils.changeToTheme(this, Utils.THEME_BLACK);
                         break;
                     case "Зелёный":
-                        Utils.changeToTheme(this, Utils.THEME_GREEN);
-                        break;
                     case "Green":
                         Utils.changeToTheme(this, Utils.THEME_GREEN);
                         break;
                     case "Синий":
-                        Utils.changeToTheme(this, Utils.THEME_BLUE);
-                        break;
                     case "Blue":
                         Utils.changeToTheme(this, Utils.THEME_BLUE);
                         break;

@@ -1,5 +1,6 @@
 package com.example.a341androidstyles_change_color;
 
+import android.app.Activity;
 import android.content.Intent;
 
 public class Utils {
@@ -14,7 +15,7 @@ public class Utils {
     /**
      * Set the theme of the Activity, and restart it by creating a new Activity of the same type.
      */
-    public static void changeToTheme(MainActivity activity, int theme)
+    public static void changeToTheme(Activity activity, int theme)
     {
         sTheme = theme;
         activity.finish();
@@ -24,7 +25,7 @@ public class Utils {
     }
 
     /** Set the theme of the activity, according to the configuration. */
-    public static void onActivityCreateSetTheme(MainActivity activity)
+    public static void onActivityCreateSetTheme(Activity activity)
     {
         switch (sTheme)
         {
